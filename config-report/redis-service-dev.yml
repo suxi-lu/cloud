@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: redis-service
+ribbon:
+  eager-load:
+    enabled: true
+  ConnectTimeout: 500
+  ReadTimeout: 1500
+  OkToRetryOnAllOperations: true
+  MaxAutoRetriesNextServer: 2
+  MaxAutoRetries: 1

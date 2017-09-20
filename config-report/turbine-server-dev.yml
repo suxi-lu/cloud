@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: turbine-server
+ribbon:
+  eager-load:
+    enabled: true
+  ConnectTimeout: 500
+  ReadTimeout: 1500
+  OkToRetryOnAllOperations: true
+  MaxAutoRetriesNextServer: 2
+  MaxAutoRetries: 1
+turbine:
+  aggregator:
+    clusterConfig: REGISTER-CENTER
+  appConfig: LEARN-SERVICE, TEST-SERVER
+  combine-host-port: true
+  clusterNameExpression: "'REGISTER-CENTER'"
