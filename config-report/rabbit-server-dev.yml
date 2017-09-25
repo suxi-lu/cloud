@@ -1,11 +1,11 @@
+server:
+  port: 9003
 spring:
+  profiles: base
   application:
     name: rabbit-server
-ribbon:
-  eager-load:
-    enabled: true
-  ConnectTimeout: 500
-  ReadTimeout: 1500
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 2
-  MaxAutoRetries: 1
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: learn
+    password: learn

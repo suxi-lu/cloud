@@ -1,4 +1,7 @@
+server:
+  port: 9011
 spring:
+  profiles: base
   application:
     name: test-service
   jpa:
@@ -10,14 +13,6 @@ spring:
     platform: h2
     schema: classpath:schema.sql
     data: classpath:data.sql
-ribbon:
-  eager-load:
-    enabled: true
-  ConnectTimeout: 500
-  ReadTimeout: 1500
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 2
-  MaxAutoRetries: 1
 
 logging:
   level:

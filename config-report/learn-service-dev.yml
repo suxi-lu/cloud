@@ -1,11 +1,6 @@
+server:
+  port: 9004
 spring:
+  profiles: base
   application:
     name: learn-service
-ribbon:
-  eager-load:
-    enabled: true
-  ConnectTimeout: 500
-  ReadTimeout: 1500
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 2
-  MaxAutoRetries: 1

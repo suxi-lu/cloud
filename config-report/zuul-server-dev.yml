@@ -1,14 +1,9 @@
+server:
+  port: 80
 spring:
+  profiles: base
   application:
     name: zuul-server
-ribbon:
-  eager-load:
-    enabled: true
-  ConnectTimeout: 500
-  ReadTimeout: 1500
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 2
-  MaxAutoRetries: 1
 zuul:
   routes:
     test-server:

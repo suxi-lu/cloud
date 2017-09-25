@@ -1,14 +1,9 @@
+server:
+  port: 10001
 spring:
+  profiles: base
   application:
     name: turbine-server
-ribbon:
-  eager-load:
-    enabled: true
-  ConnectTimeout: 500
-  ReadTimeout: 1500
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 2
-  MaxAutoRetries: 1
 turbine:
   aggregator:
     clusterConfig: REGISTER-CENTER
