@@ -1,7 +1,6 @@
 server:
   port: 9003
 spring:
-  profiles: base
   application:
     name: rabbit-server
   rabbitmq:

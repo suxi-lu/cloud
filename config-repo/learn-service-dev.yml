@@ -1,6 +1,5 @@
 server:
   port: 9004
 spring:
-  profiles: base
   application:
     name: learn-service
