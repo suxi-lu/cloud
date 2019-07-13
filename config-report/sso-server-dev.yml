@@ -1,6 +1,0 @@
-server:
-  port: 9002
-spring:
-  profiles: base
-  application:
-    name: sso-server

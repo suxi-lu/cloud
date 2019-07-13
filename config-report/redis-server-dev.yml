@@ -1,6 +1,0 @@
-server:
-  port: 9001
-spring:
-  profiles: base
-  application:
-    name: redis-server
